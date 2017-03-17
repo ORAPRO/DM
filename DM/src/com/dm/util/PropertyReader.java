@@ -71,12 +71,4 @@ public class PropertyReader {
 		}
 	  }
   }
-  
-  public static void main(String[] args) {
-	
-	  final String fileName="DM.properties";
-	  PropertyReader reader=PropertyReader.getPropertyReader();
-	  reader.loadProperties(fileName);
-	  reader.printPropeties();
-}
 }

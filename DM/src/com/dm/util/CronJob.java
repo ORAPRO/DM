@@ -25,8 +25,9 @@ public class CronJob extends Configured implements Tool {
 							+ "In valid arguments lenth. Data Migration properties file path is required.");
 			return;
 		}
-	
-		propertyReader = PropertyReader.getPropertyReader();
+		
+		propertyReader = new PropertyReader();
+		//propertyReader = PropertyReader.getPropertyReader();
 		propertyReader.loadProperties(args[0]);
 
 	// Step-2 Initialize configuration
